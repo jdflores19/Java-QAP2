@@ -38,15 +38,6 @@ public class CreditCard {
         }
     }
 
-    // public void charge(Money amount) {
-    //     if (this.balance.getAmount() + amount.getAmount() > this.limit.getAmount()) {
-    //         System.out.println("Exceeds credit limit");
-    //     } else {
-    //         System.out.println("Charge: $" + amount);
-    //         this.balance.add(amount);
-    //     }
-    // }
-
     public void payment(Money amount) {
         if (amount.compareTo(this.balance) > 0) {
             System.out.println("Payment exceeds current balance");

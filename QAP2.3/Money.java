@@ -65,51 +65,8 @@ public class Money {
         return this.dollars == money.getDollars() && this.cents == money.getCents();
     }
 
-    // public void add(Money money) {
-    //     this.dollars += money.getDollars();
-    //     this.cents += money.getCents();
-    //     if (this.cents >= 100) {
-    //         this.dollars++;
-    //         this.cents -= 100;
-    //     }
-    // }
-
-    // public void subtract(Money money) {
-    //     this.dollars -= money.getDollars();
-    //     this.cents -= money.getCents();
-    //     if (this.cents < 0) {
-    //         this.dollars--;
-    //         this.cents += 100;
-    //     }
-    // }
-
     @Override
     public String toString() {
         return String.format("%d.%02d", this.dollars, this.cents);
     }
 }
-
-// public class Money {
-//     private double amount;
-
-//     public Money(double amount) {
-//         this.amount = amount;
-//     }
-
-//     public double getAmount() {
-//         return this.amount;
-//     }
-
-//     public void add(Money money) {
-//         this.amount += money.getAmount();
-//     }
-
-//     public void subtract(Money money) {
-//         this.amount -= money.getAmount();
-//     }
-
-//     @Override
-//     public String toString() {
-//         return String.format("%.2f", this.amount);
-//     }
-// }
